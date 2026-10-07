@@ -1,0 +1,96 @@
+
+/* แต่ง h1 */
+h1 {
+    color: rgb(232,84,171);
+    text-align: center;
+
+    /* ตัดเส้นขอบตัวอักษร */
+    -webkit-text-stroke: 0.1px rgb(55,55,55);
+}
+
+h2 {
+    border-radius: 50px;
+    color: rgb(255,105,180);
+    /* border: [ค.หนา]px solid [สี]; */
+    border: 2px solid rgb(232,84,171);
+    background-color: rgb(250,218,237,0.4);
+
+    /* ตัดเส้นขอบตัวอักษร */
+    -webkit-text-stroke: 0.1px rgb(55,55,55);
+    
+    padding: 10px 5px;
+    /* ระยะห่างขอบใน */
+
+    /* ทำให้พอดีตัว */
+    display: inline-block;
+}
+
+body {
+    max-width: 800px;
+
+    margin: 0 auto;
+/* ระยะระหว่างเซคชั่น */
+
+    padding: 20px;
+    /* ระยะห่างขอบใน */
+
+    /* ที่โค้งมน */
+    border-radius: 20px;
+
+    /* กรอบนอก เส้นรอบรูป */
+border: 4px solid white;
+
+/* กรอบนอก ที่เส้นรอบรูป */
+outline: 4px solid pink;
+    
+    background-color: rgb(253,240,247);
+}
+
+
+/* แต่ง section */
+section {
+
+    /* ด้านในกรอบ สีขาว */
+    background-color: white;
+
+    /* ความห่างตัวนสกับขอบ */
+    padding: 20px;
+
+    /* ระยะห่าง btw section */
+    margin-bottom: 20px;
+
+    /* โค้งของกล่อง ยิ่งมากยิ่งโค้ง */
+    border-radius: 20px;
+
+    /* เงากรอบกล่อง */
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+
+/* แต่งปุ่ม ig */
+footer a {
+    /* ทำให้เหมือนปุ่ม */
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 20px;
+    
+    /* สี */
+
+    /* สีตัวอักษร */
+    color: white;
+
+    /* สี bg */
+    background-color: rgb(255, 41, 166);
+
+    /* สีขอบ */
+    border: 2px solid rgb(233, 44, 138);
+    
+    /* ลบเส้นใต้ที่ browser ใส่ให้ลิงก์ default */
+    text-decoration: none;
+}
+
+/* แต่งพวกย่อย p li */
+p, li {
+    color: rgb(55,55,55);
+    line-height: 1.6;
+}
