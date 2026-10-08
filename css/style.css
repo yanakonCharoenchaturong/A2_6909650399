@@ -4,3 +4,97 @@
   object-fit: cover;
   border-radius: 50%;
 }
+/* ===== Soft Pink — clean & minimal ===== */
+:root {
+  --pink-1: #FFB7CE;
+  --pink-2: #FFBFD3;
+  --pink-3: #FFC7D9;
+  --pink-4: #FFCFDE;
+  --pink-5: #FFD7E3;
+
+  --text:   #3a2430;   /* ตัวอักษรหลัก */
+  --accent: #a8325f;   /* สีลิงก์/หัวข้อ ให้อ่านง่ายบนพื้นชมพู */
+}
+
+body {
+  color: var(--text);
+  background: #fff;
+}
+
+/* ===== Header ===== */
+header.container {
+  background: var(--pink-3);
+  border-radius: 0 0 16px 16px;
+}
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.profile-icon {
+  border: 3px solid #fff !important;
+}
+
+/* ===== Headings ===== */
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin: .6rem auto 0;
+  background: var(--pink-1);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--pink-3);
+}
+
+/* ===== Sections ===== */
+#portfolio.bg-light {
+  background: var(--pink-5) !important;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  border: 1px solid var(--pink-1);
+  border-radius: 12px;
+  box-shadow: none !important;
+  transition: transform .2s ease, background-color .2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  background: #fffafc;
+}
+.card p strong {
+  color: var(--accent);
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--text);
+}
+
+::selection {
+  background: var(--pink-1);
+  color: var(--text);
+}
